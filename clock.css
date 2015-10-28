@@ -1,0 +1,76 @@
+body {
+   background-color: #000;
+   color: #fff;
+
+   overflow: hidden;
+}
+
+section {
+	position: absolute;
+	background: #000;
+	padding: 30px;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+   	-webkit-filter: blur(15px) contrast(5);
+	-moz-filter: blur(15px) contrast(5);
+	-ms-filter: blur(15px) contrast(5);
+	filter: blur(15px) contrast(5);
+}
+
+div {
+	position: absolute;
+	bottom: 50%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 1;
+	transition: transform 24s linear,
+                opacity 24s linear,
+                bottom 24s linear;
+   
+
+   white-space: nowrap;
+   font-weight: 100;
+	font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+	font-size: 60px;
+   margin-top: -20px;
+}
+
+.blur-out {
+	opacity: 0;
+ 	bottom: 50%;
+}
+
+.effect-1 {
+  transform: rotate(-25deg) scale(100) translate(-100px,-200px);
+}
+
+.effect-2 {
+  transform: rotate(-35deg) scale(100) translate(100px,200px);
+}
+
+.effect-3 {
+  transform: rotate(55deg) scale(100) translate(-100px,-200px);
+}
+
+.effect-4 {
+  transform: rotate(40deg) scale(100) translate(100px,200px);
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  div {
+    font-size: 80px;
+  }
+  
+  .blur-out {
+    bottom: 90%;
+  }
+}
+
